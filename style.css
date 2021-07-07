@@ -1,43 +1,171 @@
+/* _____ esercizio 1 _____ */
 .ex-1-square {
     width: 100px;
     height: 100px;
     border: 1px solid red;
+
+    transition: background-color 500ms ease-in-out;
 }
+.ex-1-square:hover{
+    background-color: red;
+}
+/* _____ end esercizio 1 _____ */
+
+
+
+/* _____ esercizio 2 _____ */
 .ex-2-square {
     width: 100px;
     height: 100px;
     background: red;
+
+    transition: width 900ms;
 }
+.ex-2-square:active{
+    width: 100%;
+}
+/* _____ end esercizio 2 _____ */
+
+
+
+/* _____ esercizio 3 _____ */
 .ex-3-square {
     width: 100px;
     height: 100px;
     background: red;
+
+    transition: border-radius 500ms ease-in-out;
 }
+.ex-3-square:hover{
+    border-radius: 50%;
+}
+/* _____ end esercizio 3 _____ */
+
+
+
+/* _____ esercizio 4 _____ */
 .ex-4-square {
     width: 100px;
     height: 100px;
     background: red;
+
+    transition: opacity 600ms ease-in-out;
 }
+.ex-4-square:hover{
+    opacity: 0;
+}
+/* _____ end esercizio 4 _____ */
+
+
+
+/* _____ esercizio 5 _____ */
 .ex-5-square {
     margin: 20px;
     width: 60px;
     height: 60px;
     background: red;
+
+    transition: all 300ms ease-in-out;
 }
-.ex-6-img, .ex-7-img, .ex-8-img {
+.ex-5-square:hover{
+    transform: scale(1.7);
+}
+.ex-5-square:active{
+    transform: scale(0.5);
+}
+/* _____ end esercizio 5 _____ */
+
+
+
+.ex-6-img, 
+.ex-7-img, 
+.ex-8-img {
     width: 500px;
 }
 
+
+/* _____ esercizio 6 _____ */
+.ex-6-img:hover{
+    filter: grayscale(100%);
+}
+/* _____ end esercizio 6 _____ */
+
+
+.ex-7-img, 
+.ex-8-img, 
+.ex-9-img{
+    transition: all 700ms ease-in-out;
+}
+
+
+/* _____ esercizio 7 _____ */
+.ex-7-img:hover{
+    filter: grayscale(50%) sepia(70%);
+}
+/* _____ end esercizio 7 _____ */
+
+
+
+/* _____ esercizio 8 _____ */
+.ex-8-img:hover{
+    filter: contrast(180%) grayscale(40%);
+}
+/* _____ end esercizio 8 _____ */
+
+
+
+/* _____ esercizio 9 _____ */
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
 }
+.ex-9-img:hover{
+    filter:saturate(180%) contrast(150%);
+    border-radius: 2.5rem;
+    transform: scale(1.3);
+}
+/* _____ end esercizio 9 _____ */
+
+
+
+/* _____ esercizio 10 _____ */
 .ex-10-icon {
     font-size: 60px;
+    animation: rotate 1300ms linear infinite;
 }
+@keyframes rotate{
+    to{ 
+        transform: rotate(360deg); 
+    }
+}
+/* _____ end esercizio 10 _____ */
+
+
+
+/* _____ esercizio 11 _____ */
 .ex-11-icon {
     font-size: 60px;
 }
+.ex-11-icon:hover{
+    animation: rotate2 1000ms; 
+}
+@keyframes rotate2{
+
+    0%{ 
+        transform: rotate(0deg); 
+    }
+
+    80%{
+        transform: rotate(270deg); 
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+}
+/* _____ end esercizio 11 _____ */
+
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
