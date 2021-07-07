@@ -108,7 +108,8 @@
 
 /* _____ esercizio 8 _____ */
 .ex-8-img:hover{
-    filter: contrast(180%) grayscale(40%);
+    filter: contrast(220%) grayscale(40%);
+    border-radius: 3.5rem;
 }
 /* _____ end esercizio 8 _____ */
 
@@ -195,3 +196,115 @@
     width: 60px;
     height: 20px;
 }
+
+/* _____ esercizio 12 _____ */
+.ex-12-button:hover .ex-12-top-white{
+    animation: ex-12-top-white 1000ms;
+}
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: ex-12-bottom-white 1000ms;
+}
+@keyframes ex-12-top-white{
+    0%{ 
+        left: 10%;
+    }
+
+    50%{
+        left: calc(100% - 60px);
+    }
+
+    100%{
+        left: 10%;
+    }
+}
+
+@keyframes ex-12-bottom-white{
+    0%{ 
+        right: 20%;
+    }
+
+    50%{
+        right: calc(100% - 60px);
+    }
+
+    100%{
+        right: 20%;
+    }
+}
+/* _____ end esercizio 12 _____ */
+
+
+
+
+
+/* _____ esercizio 13 _____ */
+.ex-13-button:hover .ex-13-top-white{
+    animation: ex-13-top-white 3000ms linear infinite;
+}
+.ex-13-button:hover .ex-13-bottom-white{
+    animation: ex-13-bottom-white 3000ms linear infinite;
+}
+@keyframes ex-13-top-white{
+    0%{ 
+        left: 10%;
+        top: -10px;
+    }
+
+    20%{
+        left: calc(100% - 50px);
+        top: -10px;
+    }
+
+    40%{
+        top: calc(100% - 10px);
+        left: calc(100% - 50px);
+    }
+
+    60%{
+        left: -10px;
+        top: calc(100% - 10px);
+    }
+
+    80%{
+        top: -10px;
+        left: -10px;
+    }
+
+    100%{
+        left: 10%;
+        top: -10px;
+    }
+}
+
+@keyframes ex-13-bottom-white{
+    0%{ 
+        right: 20%;
+        bottom: -10px;
+    }
+
+    20%{
+        right: calc(100% - 50px);
+        bottom: -10px;
+    }
+
+    40%{
+        bottom: calc(100% - 10px);
+        right: calc(100% - 50px);
+    }
+
+    60%{
+        right: -10px;
+        bottom: calc(100% - 10px);
+    }
+
+    80%{
+        bottom: -10px;
+        right: -10px;
+    }
+
+    100%{
+        right: 20%;
+        bottom: -10px;
+    }
+}
+/* _____ end esercizio 13 _____ */
